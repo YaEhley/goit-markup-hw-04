@@ -151,10 +151,18 @@ img {
 
 .hero {
     background-color:#2E2F42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)), 
+        url(../images/peopleoffice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-bottom: 120px;
     padding-top: 188px;
     padding-bottom: 188px;
 }
+
 
 .hero-title {
     color: #FFF;
@@ -192,6 +200,9 @@ img {
     color: #FFF;
 }
 
+.hero.icon {
+
+}
 /*========================*/
 
 /*==========FEATUTES==========*/
@@ -225,6 +236,21 @@ img {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+}
+
+.hero-item-container {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.hero-icon {
 }
 
 /*========================*/
@@ -277,7 +303,6 @@ img {
         line-height: 1.2;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
-        text-align: center;
 }
 
 .team-item-text {
@@ -286,7 +311,6 @@ img {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        text-align: center;
 }
 
 /*========================*/
