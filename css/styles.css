@@ -84,6 +84,7 @@ img {
 }
 
 .header-logo {
+    position: relative;
     font-family: "Raleway", sans-serif;
     color: #4D5AE5;
     font-size: 18px;
@@ -95,7 +96,6 @@ img {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
 }
 
 .header-logo span{
@@ -114,6 +114,7 @@ img {
 .header-menu-item {}
 
 .header-menu-link {
+    position: relative;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -126,6 +127,22 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current {
+    color: #404bbf;
+    position: relative;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 48px;
+    display: block;
+}
 
 .header-menu-link:hover,
 .header-menu-link:focus{
